@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: org-html-conf
+# key: org-html-config
+# --
+# -*- mode: org; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/paperclipmaximizer/Rethink/master/rethink.css" />
+#+OPTIONS: toc:nil num:nil html-style:nil
+#+PROPERTY: header-args :mkdirp yes :dir ~/docs

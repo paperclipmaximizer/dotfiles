@@ -1,0 +1,9 @@
+;;; Compiled snippets and support files for `org-mode'
+;;; Snippet definitions:
+;;;
+(yas-define-snippets 'org-mode
+		     '(("pomo" "|-------+-------+----------|\n| start | type  | duration |\n|-------+-------+----------|\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 20m      |\n|-------+-------+----------|\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 20m      |\n|-------+-------+----------|\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 20m      |\n|-------+-------+----------|\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 10m      |\n|       | work  | 20m      |\n|       | break | 20m      |\n|-------+-------+----------|\n" "pomo table" nil nil nil "/home/liam/.emacs.d/snippets/org-mode/pomo" nil nil)
+		       ("org-html-config" "# -*- mode: org; -*-\n\n#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githubusercontent.com/paperclipmaximizer/Rethink/master/rethink.css\" />\n#+OPTIONS: toc:nil num:nil html-style:nil\n#+PROPERTY: header-args :mkdirp yes :dir ~/docs" "org-html-conf" nil nil nil "/home/liam/.emacs.d/snippets/org-mode/org-html-conf" nil nil)))
+
+
+;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023

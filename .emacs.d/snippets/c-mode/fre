@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: for_each
+# key: fre
+# contributor: Liam AVELLA-PISERA <paperclipmaximizer.net>
+# --
+for (size_t int i = $0; i; --i){
+    $1(i);
+}

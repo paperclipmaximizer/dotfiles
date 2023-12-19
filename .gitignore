@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!.emacs
+!.emacs.d/snippets
+!.emacs.rc
+!.bashrc
+!.config/sway/config
+!.local/bin/s2mem_sleep.sh

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: stub
+# key: s
+# --
+
+func $1($2):$3
+     $4

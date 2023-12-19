@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: gate
+# key: gate
+# --
+CHIP \$0 {
+IN \$1, \$2;
+OUT out;
+
+PARTS:
+$5 (in=\$1, out=\$3);
+$6 (in=\$2, out=\$4);
+}
