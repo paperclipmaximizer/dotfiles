@@ -17,4 +17,4 @@
 		       ("bp" "buildPhase= ''\n  runHook preBuild\n$1\n  runHook postBuild\n'';\n$0" "buildPhase" nil nil nil "/home/liam/.emacs.d/snippets/nix-mode/buildPhase" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023

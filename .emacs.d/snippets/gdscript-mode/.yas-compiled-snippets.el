@@ -188,10 +188,10 @@
 			("Objects")
 			((yas-indent-line 'fixed))
 			"/home/liam/.emacs.d/snippets/gdscript-mode/connect" nil nil)
-		       ("class" "# Class: `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`\n# Author: `(user-full-name)` `(if user-mail-address (concat \"(<\" user-mail-address \">)\") \"\")`\n\nextends ${1:Node}\n\n################################################################################\n# Assets paths                                                                 #\n################################################################################\n\n\n################################################################################\n# Constants                                                                    #\n################################################################################\n\n\n################################################################################\n# Attributes                                                                   #\n################################################################################\n$2\n\n################################################################################\n# Methods                                                                      #\n################################################################################\nfunc _ready():\n      ${3:pass}\n\n\n$0\n" "Class" nil
+		       ("class" "# Class: `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`\n# Author: Liam Avella-Pisera liam.avellapisera@gmail.com\nclass_name $1 extends $2\n## The $1 class has the role of $5\n##\n## The script has the role of $6, it can $7 aswell as $8\n##\n## @$9\n## @$10\n## @experimental\nvar $3\nfunc _init($3):\n     _$3 = $3\n\nfunc _ready():\n      ${4:pass}\n$0\n" "Class" nil
 			("Classes")
 			((yas-indent-line 'fixed))
 			"/home/liam/.emacs.d/snippets/gdscript-mode/class" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023

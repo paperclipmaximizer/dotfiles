@@ -6,4 +6,4 @@
 		       ("org-html-config" "# -*- mode: org; -*-\n\n#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githubusercontent.com/paperclipmaximizer/Rethink/master/rethink.css\" />\n#+OPTIONS: toc:nil num:nil html-style:nil\n#+PROPERTY: header-args :mkdirp yes :dir ~/docs" "org-html-conf" nil nil nil "/home/liam/.emacs.d/snippets/org-mode/org-html-conf" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023

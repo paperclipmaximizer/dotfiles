@@ -5,4 +5,4 @@
 		     '(("def" "define(\\`${1:macro}',\\`${2:subst}').\n$0" "def" nil nil nil "/home/liam/.emacs.d/snippets/m4-mode/def" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023

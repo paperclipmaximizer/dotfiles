@@ -40,4 +40,4 @@
 		       ("au" "automatic $0" "automatic" nil nil nil "/home/liam/.emacs.d/snippets/f90-mode/au" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023

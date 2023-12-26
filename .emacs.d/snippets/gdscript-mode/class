@@ -1,35 +1,24 @@
 # -*- mode: snippet -*-
-# contributor: Franco Eusébio Garcia
+# contributor: Liam Avella-Pisera
 # group: Classes
 # name: Class
 # key: class
 # expand-env: ((yas-indent-line 'fixed))
 # --
 # Class: `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
-# Author: `(user-full-name)` `(if user-mail-address (concat "(<" user-mail-address ">)") "")`
+# Author: Liam Avella-Pisera liam.avellapisera@gmail.com
+class_name $1 extends $2
+## The $1 class has the role of $5
+##
+## The script has the role of $6, it can $7 aswell as $8
+##
+## @$9
+## @$10
+## @experimental
+var $3
+func _init($3):
+     _$3 = $3
 
-extends ${1:Node}
-
-################################################################################
-# Assets paths                                                                 #
-################################################################################
-
-
-################################################################################
-# Constants                                                                    #
-################################################################################
-
-
-################################################################################
-# Attributes                                                                   #
-################################################################################
-$2
-
-################################################################################
-# Methods                                                                      #
-################################################################################
 func _ready():
-      ${3:pass}
-
-
+      ${4:pass}
 $0

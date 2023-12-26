@@ -42,4 +42,4 @@
 		       ("ALU" "ALU(x=$1,y=$2,zx=$3,nx=$4,zy=$5,ny=$6,f=$7,no=$8,out=$9,zr=$10,ng=$11);$0" "ALU(x= ,y= ,zx= ,nx= ,zy= ,ny= ,f= ,no= ,out= ,zr= ,ng= );" nil nil nil "/home/liam/.emacs.d/snippets/nand-hdl-mode/ALU" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 19 11:32:39 2023
+;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023
