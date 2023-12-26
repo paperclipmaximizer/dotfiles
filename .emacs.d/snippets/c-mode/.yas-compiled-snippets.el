@@ -24,4 +24,4 @@
 		       ("ass" "#include <assert.h>\n$0" "assert" nil nil nil "/home/liam/.emacs.d/snippets/c-mode/assert" nil nil)))
 
 
-;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023
+;;; Do not edit! File generated at Tue Dec 26 15:03:07 2023

@@ -29,4 +29,4 @@
 		       ("atype" "abstract type ${1:${2:type} <: ${3:supertype}} end$0" "abstract type ... end" nil nil nil "/home/liam/.emacs.d/snippets/julia-mode/atype" nil nil)))
 
 
-;;; Do not edit! File generated at Sun Dec 24 10:56:39 2023
+;;; Do not edit! File generated at Tue Dec 26 15:03:08 2023
