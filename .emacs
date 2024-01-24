@@ -14,7 +14,8 @@
 (yas-reload-all)
 (yas-global-mode 1)
 
-
+(global-company-mode)
+(global-set-key (kbd "<tab>") #'company-indent-or-complete-common)
 (setq org-todo-list "~/org/todo.org")
 
 
@@ -33,6 +34,10 @@
 (show-paren-mode 1)
 (global-display-line-numbers-mode)
 (load-theme 'zenburn t)
+
+(require 'no-easy-keys)
+(no-easy-keys 1)
+
 
 ;; NANDTOTETRIS mode
 (load "~/.emacs.d/nand-hdl-mode.el")
@@ -56,7 +61,6 @@
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
 (delete-selection-mode 1)
 (display-line-numbers-mode)
 (setq display-line-numbers 'relative)
@@ -73,27 +77,11 @@
 (require 'org-roam-id)
 (require 'org-roam-mode)
 (require 'git-auto-commit-mode)
-;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ; see remark below
+
 
 (global-prettify-symbols-mode 1)
 (ac-config-default)
 
-(require 'octave)
-(add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
-
-;; COQ
-;; (setq coq-symbols
-;;     '(("forall" ?∀)
-;;     ("->" ?→)
-;;     ("exists" ?∃)
-;;     ("=>" ?⇒)
-;;     ("False" ?⊥)
-;;     ("True" ?⊤)))
-
-
-(add-hook 'coq-mode-hook #'company-coq-mode)
-          ;; (lambda ()
-          ;;   (setq prettify-symbols-alist coq-symbols)))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -112,11 +100,12 @@
  '(org-agenda-loop-over-headlines-in-active-region 1)
  '(org-pomodoro-finished-sound "/home/liam/.emacs.r/breaktimer.wav")
  '(package-selected-packages
-   '(eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode company-coq org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
+   '(eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
  '(show-paren-mode nil)
  '(tool-bar-mode nil)
  '(warning-suppress-types '((comp) (comp) (comp)))
  '(yas-snippet-dirs '("~/.emacs.d/snippets")))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -129,25 +118,8 @@
 (global-set-key (kbd "M-p") 'move-text-up)
 (global-set-key (kbd "M-n") 'move-text-down)
 
-
-
 (define-key emacs-lisp-mode-map (kbd "C-c C-c") #'mp-elisp-mode-eval-buffer)
 (define-key lisp-interaction-mode-map (kbd "C-c C-c") #'mp-elisp-mode-eval-buffer)
-
-;; safe, recent or one-shot additions TODO do I need these?
-;; (require ('yaml-mode
-;; 	  'cmake-mode
-;; 	  'rust-mode
-;; 	  'markdown-mode
-;; 	  'dockerfile-mode
-;; 	  'toml-mode
-;; 	  'nginx-mode
-;; 	  'typescript-mode
-;; 	  'rfc-mode
-;; 	  'sml-mode
-;; 	  'rust-mode
-;; 	  'move-text
-;; 	  ))
 
 (setq debug-on-error t)
 
