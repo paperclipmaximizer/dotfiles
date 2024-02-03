@@ -2,6 +2,11 @@
 (require 'package)
 (require 'org)
 (require 'org-roam)
+
+;; avoids max eval limit
+(setq max-lisp-eval-depth 500)
+
+
 (defun mp-elisp-mode-eval-buffer ()
   (interactive)
   (message "Evaluated buffer")
@@ -18,6 +23,9 @@
 (global-set-key (kbd "<tab>") #'company-indent-or-complete-common)
 (setq org-todo-list "~/org/todo.org")
 
+(add-to-list 'load-path "~/.emacs.d/elpa/go-mode-20230823.2304/go-mode.el")
+(autoload 'go-mode "go-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/org-roam.el")
@@ -37,7 +45,6 @@
 
 (require 'no-easy-keys)
 (no-easy-keys 1)
-
 
 ;; NANDTOTETRIS mode
 (load "~/.emacs.d/nand-hdl-mode.el")
@@ -78,7 +85,6 @@
 (require 'org-roam-mode)
 (require 'git-auto-commit-mode)
 
-
 (global-prettify-symbols-mode 1)
 (ac-config-default)
 
@@ -100,7 +106,7 @@
  '(org-agenda-loop-over-headlines-in-active-region 1)
  '(org-pomodoro-finished-sound "/home/liam/.emacs.r/breaktimer.wav")
  '(package-selected-packages
-   '(eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
+   '(docstr eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
  '(show-paren-mode nil)
  '(tool-bar-mode nil)
  '(warning-suppress-types '((comp) (comp) (comp)))

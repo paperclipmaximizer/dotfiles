@@ -2,8 +2,8 @@
 # contributor: Franco Eusébio Garcia
 # group: Functions
 # name: Function
-# key: func
+# key: s
 # expand-env: ((yas-indent-line 'fixed))
 # --
 func ${1:function_name}(${2:parameters}):
-    ${3:pass}
+	${3:pass}

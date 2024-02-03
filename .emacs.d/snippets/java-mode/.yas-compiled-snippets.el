@@ -3,6 +3,7 @@
 ;;;
 (yas-define-snippets 'java-mode
 		     '(("val" "final ${1:int} ${2:n} = $0;" "value" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/value" nil nil)
+		       ("/*" "/**\n * ${1:documentation}\n */" "doc" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/uniheader" nil nil)
 		       ("try" "try {\n    $0\n}\ncatch (${1:Throwable e}) {\n      ${2:System.out.println(\"Error \" + e.getMessage());\n      e.printStackTrace();}\n}\n" "try" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/try" nil nil)
 		       ("toStr" "public String toString() {\n       $0\n}" "toString" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/toString" nil nil)
 		       ("." "this.$1 = $1;\n$0" "this" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/this" nil nil)
@@ -30,7 +31,7 @@
 		       ("for" "for (${1:int i = 0}; ${2:i < N}; ${3:i++}) {\n    $0\n}" "for" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/for" nil nil)
 		       ("file" "public class ${1:`(file-name-base\n                    (or (buffer-file-name)\n                        (buffer-name)))`} {\n  $0\n}\n" "file_class" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/file_class" nil nil)
 		       ("eq" "public boolean equals(${1:Class} other) {\n       $0\n}" "equals" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/equals" nil nil)
-		       ("/*" "/**\n * ${1:documentation}\n */" "doc" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/doc" nil nil)
+		       ("author" "/******************************\n ** Author: Liam Avella-Pisera\n ** StudentNumber: 1220356\n ** Username: ${1:documentation}\n ******************************/" "unihead" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/doc" nil nil)
 		       ("dt" "@Test\npublic void test${1:Name}() throws Exception {\n    $0\n}\n" "define test method" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/define test method" nil nil)
 		       ("c" "public ${1:`(file-name-base\n              (or (buffer-file-name)\n                  (buffer-name)))`}($2) {\n       $0\n}" "constructor" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/constructor" nil nil)
 		       ("cls" "class ${1:Class} {\n      $0\n}" "cls" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/cls" nil nil)
@@ -41,4 +42,4 @@
 		       ("apr_assert" "if (Globals.useAssertions) {\n   ${1:assert ..};\n}\n" "apr_assert" nil nil nil "/home/liam/.emacs.d/snippets/java-mode/apr_assert" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 26 15:03:08 2023
+;;; Do not edit! File generated at Sat Feb  3 18:23:00 2024

@@ -25,4 +25,4 @@
 		       ("class" "/++\n + $1\n +/\nclass ${1:ClassName}\n{\n	this($2)\n	{\n      $0\n	}\n}\n" "class … { … }" nil nil nil "/home/liam/.emacs.d/snippets/d-mode/class" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 26 15:03:07 2023
+;;; Do not edit! File generated at Sat Feb  3 18:23:00 2024

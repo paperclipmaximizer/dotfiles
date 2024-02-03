@@ -1,7 +1,9 @@
 # -*- mode: snippet -*-
-# name: doc
-# key: /*
+# name: unihead
+# key: author
 # --
-/**
- * ${1:documentation}
- */
+/******************************
+ ** Author: Liam Avella-Pisera
+ ** StudentNumber: 1220356
+ ** Username: ${1:documentation}
+ ******************************/

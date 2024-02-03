@@ -1,7 +1,8 @@
 # -*- mode: snippet -*-
 # name: stub
-# key: s
+# key: stub
+# expand-env: ((yas-indent-line 'fixed))
 # --
 
 func $1($2):$3
-     $4
+	$4

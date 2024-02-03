@@ -44,4 +44,4 @@
 		       ("article" "@article{ ${title},\n  author  = {${author}},\n  title   = {${title}},\n  journal = {${journal}},\n  year    = {${year}}${,\n  volume  = {${volume}}}${,\n  number  = {${number}}}${,\n  pages   = {${pages}}}${,\n  month   = {${month}}}${,\n  note    = {${note}}}\n}\n\n$0" "article" nil nil nil "/home/liam/.emacs.d/snippets/bibtex-mode/article" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 26 15:03:07 2023
+;;; Do not edit! File generated at Sat Feb  3 18:23:00 2024

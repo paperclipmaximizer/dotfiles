@@ -44,7 +44,9 @@
 		       ("tr" "tr(\"${1:string_code}\")\n" "Translatable String" nil
 			("Internationalization")
 			nil "/home/liam/.emacs.d/snippets/gdscript-mode/tr" nil nil)
-		       ("s" "func $1($2):$3\n     $4" "stub" nil nil nil "/home/liam/.emacs.d/snippets/gdscript-mode/stub" nil nil)
+		       ("stub" "func $1($2):$3\n	$4" "stub" nil nil
+			((yas-indent-line 'fixed))
+			"/home/liam/.emacs.d/snippets/gdscript-mode/stub" nil nil)
 		       ("scene_preload" "var ${1:scene} = preload(\"res://${2:scene_path}\")\nvar ${3:node} = $1.instance()\n# Add the node as child of the current scene.\nadd_child($3)\n$0\n" "Pre-load Scene" nil
 			("Scenes")
 			nil "/home/liam/.emacs.d/snippets/gdscript-mode/scene_preload" nil nil)
@@ -131,7 +133,7 @@
 			("Functions")
 			((yas-indent-line 'fixed))
 			"/home/liam/.emacs.d/snippets/gdscript-mode/function_static" nil nil)
-		       ("func" "func ${1:function_name}(${2:parameters}):\n    ${3:pass}\n" "Function" nil
+		       ("s" "func ${1:function_name}(${2:parameters}):\n	${3:pass}\n" "Function" nil
 			("Functions")
 			((yas-indent-line 'fixed))
 			"/home/liam/.emacs.d/snippets/gdscript-mode/function" nil nil)
@@ -194,4 +196,4 @@
 			"/home/liam/.emacs.d/snippets/gdscript-mode/class" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 26 15:03:07 2023
+;;; Do not edit! File generated at Sat Feb  3 18:23:00 2024

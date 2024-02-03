@@ -15,4 +15,4 @@
 		       ("def" "!define ${1:CONSTANT} ${2:value}" "define" nil nil nil "/home/liam/.emacs.d/snippets/nsis-mode/define" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Dec 26 15:03:08 2023
+;;; Do not edit! File generated at Sat Feb  3 18:23:01 2024
