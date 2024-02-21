@@ -3,6 +3,8 @@
 (require 'org)
 (require 'org-roam)
 
+(require 'generic-x)
+
 ;; avoids max eval limit
 (setq max-lisp-eval-depth 500)
 
@@ -106,7 +108,7 @@
  '(org-agenda-loop-over-headlines-in-active-region 1)
  '(org-pomodoro-finished-sound "/home/liam/.emacs.r/breaktimer.wav")
  '(package-selected-packages
-   '(docstr eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
+   '(eglot-java docstr eglot auto-yasnippet which-key deadgrep ink-mode tree-sitter-ispell fixmee yasnippet-classic-snippets texfrag auctex org-attach-screenshot tree-sitter-langs vulpea treemacs obsidian ac-octave matlab-mode org-latex-impatient latex-unicode-math-mode org-fragtog magit-todos magit git-commit-mode move-text ido-completing-read+ yasnippet-snippets org-roam smex racket-mode typescript-mode tsc ts xref-js2 js2-refactor js2-mode lsp-mode org-pomodoro python-mode no-easy-keys auto-complete markdown-preview-eww markdown-mode rust-mode proof-general))
  '(show-paren-mode nil)
  '(tool-bar-mode nil)
  '(warning-suppress-types '((comp) (comp) (comp)))

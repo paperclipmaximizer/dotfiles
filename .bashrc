@@ -93,9 +93,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # tts
-alias speak="/home/liam/piper/piper --model /home/liam/piper/en_GB-vctk-medium.onnx --output-raw |   aplay -r 22500 -f S16_LE -t raw"
-
-alias speak-clipboard="wl-paste | speak"
+alias speak="$piper-tts --model en_GB-vctk-medium.onnx --output-raw | aplay -r 22500 -f S16_LE -t raw"
+#alias speak-clipboard=$(wl-copy) ; echo "$(wl-paste)" | $speak
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -121,3 +120,7 @@ alias config='/usr/bin/git --git-dir=/home/liam/.cfg/ --work-tree=/home/liam'
 PATH=$PATH:~/.local/bin
 export _JAVA_AWT_WM_NONREPARENTING=1
 neofetch
+if [[ -z $DISPLAY && $(tty) == /dev/tty1 && $XDG_SESSION_TYPE == tty ]]; then
+  MOZ_ENABLE_WAYLAND=1 QT_QPA_PLATFORM=wayland XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session
+fi
+
