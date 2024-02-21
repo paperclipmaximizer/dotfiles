@@ -19,4 +19,4 @@
 		       ("class" "(defclass ${1:ClassName} [${2:BaseClass}]\n${3:  (defn --init-- [${4:arg}]\n    (setv $0))})" "class" nil nil nil "/home/liam/.emacs.d/snippets/hy-mode/class" "direct-keybinding" nil)))
 
 
-;;; Do not edit! File generated at Sat Feb  3 18:23:00 2024
+;;; Do not edit! File generated at Mon Feb 19 22:10:47 2024
