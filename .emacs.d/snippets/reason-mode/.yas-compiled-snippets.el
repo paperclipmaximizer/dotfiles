@@ -15,4 +15,4 @@
 		       ("component" "module ${1:Component} = {\n  [@react.component]\n  let make = (${2:parameters}) => {\n    $0\n  };\n};" "component" nil nil nil "/home/liam/.emacs.d/snippets/reason-mode/component" nil nil)))
 
 
-;;; Do not edit! File generated at Sat Feb  3 18:23:01 2024
+;;; Do not edit! File generated at Mon Feb 19 22:10:47 2024
